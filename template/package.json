@@ -9,8 +9,12 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.4.2",
-    "vuetify": "^0.15.7"
+        "vue": "^2.4.2",
+        "vue-router": "^2.7.0",
+        "vue-snotify": "^2.0.1",
+        "vue-typer": "^1.0.5",
+        "vuetify": "^0.15.2",
+        "vuex": "^2.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -20,6 +24,10 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-plugin-add-filehash": "^6.9.4",
     "babel-plugin-transform-imports": "^1.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0", // ...
+    "babel-plugin-transform-regenerator": "^6.26.0", //async
+    "babel-plugin-transform-runtime": "^6.23.0",//async
+    "ip": "^1.1.5",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
