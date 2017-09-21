@@ -1,8 +1,8 @@
 {
-  "name": "{{ name }}",
-  "description": "{{ description }}",
+  "name": "tao-cau-hoi",
+  "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "{{ author }}",
+  "author": "cuduy197 <cuduy197@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
@@ -24,17 +24,15 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-plugin-add-filehash": "^6.9.4",
     "babel-plugin-transform-imports": "^1.4.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0", // ...
-    "babel-plugin-transform-regenerator": "^6.26.0", //async
-    "babel-plugin-transform-runtime": "^6.23.0",//async
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "ip": "^1.1.5",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
-    {{#sass}}
     "node-sass": "^4.5.0",
     "sass-loader": "^5.0.1",
-    {{/sass}}
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
