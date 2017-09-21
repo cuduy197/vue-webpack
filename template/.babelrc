@@ -1,14 +1,30 @@
 {
-  "presets": [
-    ["es2015",  {"modules": false}],
-    ["stage-2"]
-  ],
-  "plugins": [
-    "add-filehash",
-    ["transform-imports", {
-        "vuetify": {
-            "transform": "vuetify/src/components/${member}"
-        }
-    }]
-  ]
+    "presets": [
+        [
+            "env", {
+                "modules": false,
+				 "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"]
+                   }
+            }
+        ]
+    ],
+    "plugins": [
+        //async/await
+        "transform-regenerator", [
+            "transform-runtime", {
+                "helpers": false,
+                "polyfill": false,
+                "regenerator": true
+            }
+        ],
+        "transform-object-rest-spread",
+        "add-filehash", [
+            "transform-imports", {
+                "vuetify": {
+                    "transform": "vuetify/src/components/${member}"
+                }
+            }
+        ]
+    ]
 }
